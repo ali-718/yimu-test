@@ -1,0 +1,28 @@
+:root {
+  --FONT-FAMILY: "Rubik";
+}
+
+p {
+  font-family: var(--FONT-FAMILY);
+  margin: 0;
+  padding: 0;
+}
+
+span {
+  font-family: var(--FONT-FAMILY);
+  margin: 0;
+  padding: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+.sq-payment-form {
+  margin-top: 1rem !important;
+  width: 85% !important;
+
+  @media (max-width: 1200px) {
+    width: 95% !important;
+  }
+}

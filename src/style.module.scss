@@ -1,0 +1,239 @@
+.contentBox {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 5rem;
+
+  @media (max-width: 1100px) {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  @media (max-width: 850px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 600px) {
+    margin-top: 1rem;
+  }
+}
+
+.leftContent {
+  width: 50%;
+
+  @media (max-width: 850px) {
+    width: 100%;
+  }
+}
+
+.rightContent {
+  width: 50%;
+
+  @media (max-width: 850px) {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+
+.cartBox {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.cartContainer {
+  width: 50%;
+  background-color: var(--GRAY-CART-COLOR);
+  border-top-right-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    cursor: pointer;
+  }
+
+  @media (max-width: 1200px) {
+    width: 60%;
+  }
+
+  @media (max-width: 1000px) {
+    width: 80%;
+  }
+
+  @media (max-width: 850px) {
+    flex: 1;
+    width: 100%;
+    padding: 0rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  @media (max-width: 600px) {
+    border-top-right-radius: 0rem;
+  }
+}
+
+.priceBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: black;
+  }
+
+  span {
+    font-size: 0.8rem;
+    color: #8c8c8c;
+    margin-top: 0.5rem;
+  }
+}
+
+.priceCounterBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: black;
+  }
+
+  img {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.priceCounterBoxMobile {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #e8e8e8;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: var(--GRAY-CART-COLOR);
+
+  p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: black;
+  }
+
+  img {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+
+  @media (max-width: 600px) {
+    display: flex;
+  }
+}
+
+.sizeGuideModal {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: none;
+}
+
+.modalWhiteBox {
+  background-color: #f7f7f7;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.modalWhiteContainer {
+  width: 60rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+
+  @media (max-width: 1050px) {
+    width: 40rem;
+  }
+
+  @media (max-width: 800px) {
+    width: 90%;
+  }
+}
+
+.itemListBox {
+  width: 15rem;
+
+  @media (max-width: 600px) {
+    width: 10rem;
+  }
+
+  @media (max-width: 500px) {
+    width: 8rem;
+  }
+}
+
+.quantityListBox {
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: 600px) {
+    width: 3rem;
+  }
+}
+
+.priceListBox {
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @media (max-width: 600px) {
+    width: 7rem;
+  }
+}
+
+.modalWhiteBoxHeading {
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+}
+
+.listItem {
+  color: var(--MENU-COLOR);
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.alternativePrice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.red {
+  color: tomato;
+  margin-right: 1rem;
+
+  @media (max-width: 500px) {
+    margin-right: 0.5rem;
+  }
+}
